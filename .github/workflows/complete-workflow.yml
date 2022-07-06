@@ -31,6 +31,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   zap_scan:
     runs-on: ubuntu-latest
+    need: security
     name: Scan the webapplication
     steps:
       - name: Checkout
