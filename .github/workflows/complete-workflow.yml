@@ -35,7 +35,6 @@ jobs:
     steps:
       - name: Checkout1
         uses: actions/checkout@v2
-       
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
