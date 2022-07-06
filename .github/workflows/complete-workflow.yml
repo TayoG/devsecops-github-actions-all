@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-         ref: master
+         ref: main
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
@@ -44,3 +44,5 @@ jobs:
           target: 'http://lowlatencysolutions.com'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
+       
+          
