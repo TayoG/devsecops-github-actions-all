@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: security
     steps:
-      - name: Checkout repo for running log4j analysis
+      - name: Checkout repo for running log4j analysis1
         id: checkout
         uses: actions/checkout@v2.4.0
         with:
